@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Formulario Login</title>
+
+    <script src="./javascript/funciones.js"></script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="frmLogin" action="./backend/verificarUsuario.php" method="POST">
+        
+        <table align="center">       
+            <tr>
+                <td colspan="2"><h4>Ingreso de credenciales</h4></td>   
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td >DNI:</td>
+                <td style="text-align:left;padding-left:15px">
+                    <input type="number" name="txtDni" id="txtDni" size="8" min="1000000" max="55000000"> 
+                       
+                </td>
+                <td>
+                    <span style="color: red;display: none;" id="spanDni">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                 <td style="text-align:left;padding-left:15px">
+                    <input type="text" name="txtApellido" id="txtApellido">
+                    
+                </td>
+                <td>
+                    <span style="color:red;display: none;" id="spanApellido">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="reset" Value="Limpiar">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right" > 
+                    <input type="button" name="btnEnviar" id="btnEnviar" value="Enviar" onclick= AdministarValidacionesLogin()>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

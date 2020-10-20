@@ -138,11 +138,12 @@
                     <div id="divMostrarEmpleados">
 
                     </div>
+                    <div><br/><a href="./backend/convertirPDF.php">Covertir listado a PDF</a></div>
                 </td>
             </tr>
         </table>
         <div><br/><a href="./backend/cerrarSesion.php">Desloguearse</a></div>
-        <div><br/><a href="./backend/convertirPDF.php">Covertir listado a PDF</a></div>
+        
     <?php
    
         if(isset($_POST['hiddenModificar'])){
